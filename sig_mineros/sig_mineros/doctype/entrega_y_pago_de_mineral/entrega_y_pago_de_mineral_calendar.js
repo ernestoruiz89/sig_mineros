@@ -15,7 +15,7 @@ frappe.views.calendar["Entrega y Pago de Mineral"] = {
 		header: {
 			left: 'prev,today,next',
 			center: 'title',
-			right: 'month week'
+			right: 'month agendaWeek'
 		}
 	},
 	get_events_method: "frappe.desk.calendar.get_events"
