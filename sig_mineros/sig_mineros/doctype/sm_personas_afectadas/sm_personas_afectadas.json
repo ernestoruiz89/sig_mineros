@@ -1,0 +1,71 @@
+{
+ "creation": "2019-12-28 18:01:22.983464",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre_completo",
+  "edad",
+  "tipo_lesion",
+  "desaparecido",
+  "es_socio",
+  "socio"
+ ],
+ "fields": [
+  {
+   "fetch_from": "doc.socio.nombre",
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombres y Apellidos"
+  },
+  {
+   "fieldname": "edad",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Edad"
+  },
+  {
+   "fieldname": "tipo_lesion",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo de Lesi\u00f3n",
+   "options": "Leve\nGrave\nMuy Grave\nMortal"
+  },
+  {
+   "default": "0",
+   "fieldname": "desaparecido",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u00bfDesaparecido?"
+  },
+  {
+   "default": "0",
+   "fieldname": "es_socio",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u00bfEs socio?"
+  },
+  {
+   "depends_on": "eval:(doc.es_socio===1);",
+   "description": "Al guardarse el nombre y apellido ser\u00e1n reemplazados por los del socio registrado",
+   "fieldname": "socio",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Seleccionar Socio",
+   "options": "Minero Artesanal",
+   "print_hide": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-31 09:09:56.463809",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SM_Personas Afectadas",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

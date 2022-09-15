@@ -1,0 +1,208 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SIG MINEROS</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Graficos Power BI\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Formularios\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Cat\u00e1logos\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Configuraci\u00f3n\",\"col\":4}}]",
+ "creation": "2022-07-11 11:51:14.224088",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dashboard-list",
+ "idx": 0,
+ "label": "SIG MINEROS",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Formularios",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Entrega y Pago de Mineral",
+   "link_count": 0,
+   "link_to": "Entrega y Pago de Mineral",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Minero Artesanal (Socio)",
+   "link_count": 0,
+   "link_to": "Minero Artesanal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Datos Estados Financieros",
+   "link_count": 0,
+   "link_to": "Datos Estados Financieros",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Datos Mensuales",
+   "link_count": 0,
+   "link_to": "Datos Mensuales",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registro de Accidentes",
+   "link_count": 0,
+   "link_to": "Registro de Accidentes",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Configuraci\u00f3n",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cooperativa de Mineria Artesanal",
+   "link_count": 0,
+   "link_to": "Cooperativa de Mineria Artesanal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cat\u00e1logos",
+   "link_count": 9,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tipo Cuenta por Pagar",
+   "link_count": 0,
+   "link_to": "Tipo Cuenta por Pagar",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tipo Cuenta por Cobrar",
+   "link_count": 0,
+   "link_to": "Tipo Cuenta por Cobrar",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tipo de Ingresos",
+   "link_count": 0,
+   "link_to": "Tipo de Ingresos",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tipo de Costos",
+   "link_count": 0,
+   "link_to": "Tipo de Costos",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tipo de Mineral",
+   "link_count": 0,
+   "link_to": "Tipo de Mineral",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procedencia",
+   "link_count": 0,
+   "link_to": "Procedencia",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cargo JD",
+   "link_count": 0,
+   "link_to": "Cargo JD",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plantel de Entrega",
+   "link_count": 0,
+   "link_to": "Plantel de Entrega",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tipo Deducciones",
+   "link_count": 0,
+   "link_to": "Tipo Deducciones",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-08-06 10:28:05.514679",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SIG MINEROS",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Graficos Power BI",
+   "link_to": "tablero_de_gestion_m",
+   "type": "Page"
+  }
+ ],
+ "title": "SIG MINEROS"
+}

@@ -1,0 +1,65 @@
+{
+ "allow_copy": 1,
+ "autoname": "field:cargo",
+ "creation": "2020-01-01 19:57:48.499586",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cargo",
+  "orden"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "cargo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cargo",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "orden",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Orden"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2020-01-06 06:15:14.938031",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Cargo JD",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "orden",
+ "sort_order": "ASC",
+ "title_field": "cargo"
+}

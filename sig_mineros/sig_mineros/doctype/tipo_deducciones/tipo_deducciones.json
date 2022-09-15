@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:deduccion",
+ "creation": "2019-12-28 23:33:18.689423",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "deduccion",
+  "valor_defecto",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "deduccion",
+   "fieldtype": "Data",
+   "label": "Nombre Deducci\u00f3n",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "descripcion",
+   "fieldtype": "Data",
+   "label": "Descripci\u00f3n Breve"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "valor_defecto",
+   "fieldtype": "Currency",
+   "label": "Valor por defecto",
+   "precision": "2"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "modified": "2022-08-06 10:28:55.561112",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Tipo Deducciones",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "deduccion"
+}

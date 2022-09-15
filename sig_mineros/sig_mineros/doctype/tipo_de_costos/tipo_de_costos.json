@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "autoname": "field:tipo_costo",
+ "creation": "2020-01-03 22:06:42.600467",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_costo",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_costo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tipo Costo",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "descripcion",
+   "fieldtype": "Text Editor",
+   "in_preview": 1,
+   "label": "Descripci\u00f3n"
+  }
+ ],
+ "links": [],
+ "modified": "2022-08-06 10:22:15.122577",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Tipo de Costos",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,52 @@
+{
+ "creation": "2020-01-01 19:58:31.809505",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "socio",
+  "nombre",
+  "cargo"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "socio",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Socio",
+   "options": "Minero Artesanal",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cargo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cargo",
+   "options": "Cargo JD",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "columns": 3,
+   "fetch_from": "socio.nombre",
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-01 22:43:44.158326",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SM_Junta Directiva",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

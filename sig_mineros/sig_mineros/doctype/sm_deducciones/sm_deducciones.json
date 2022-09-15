@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "creation": "2019-12-28 23:33:25.251245",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "deduccion",
+  "valor",
+  "es_reembolsable"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "deduccion",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Deduccion",
+   "options": "Tipo Deducciones"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "deduccion.valor_defecto",
+   "fetch_if_empty": 1,
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor",
+   "precision": "2"
+  },
+  {
+   "columns": 3,
+   "default": "0",
+   "fieldname": "es_reembolsable",
+   "fieldtype": "Check",
+   "label": "Reembolsar a Socio"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-07 20:05:40.379692",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SM_Deducciones",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,37 @@
+{
+ "creation": "2020-01-03 21:57:03.784536",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_ingreso",
+  "valor"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_ingreso",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipo Ingresos",
+   "options": "Tipo de Ingresos"
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto",
+   "precision": "2"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-03 22:58:00.178112",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SM_Ingresos",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

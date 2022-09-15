@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "creation": "2019-12-25 12:04:54.890924",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "datos_generales_de_la_instituci\u00f3n__cooperativa_section",
+  "nombre",
+  "ruc",
+  "telefono",
+  "column_break_3",
+  "nombre_corto",
+  "direccion",
+  "email",
+  "section_break_9",
+  "fecha_constitucion",
+  "fecha_inscripcion",
+  "column_break_12",
+  "no_escritura_constitucion",
+  "tomo_folio_libro_noregistro",
+  "section_break_12",
+  "junta_directiva",
+  "pbi"
+ ],
+ "fields": [
+  {
+   "fieldname": "datos_generales_de_la_instituci\u00f3n__cooperativa_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS GENERALES DE LA INSTITUCI\u00d3N / COOPERATIVA"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre de Instituci\u00f3n / Cooperativa",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_corto",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Corto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ruc",
+   "fieldtype": "Data",
+   "label": "No. RUC",
+   "length": 14
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "No. Tel\u00e9fono",
+   "length": 8
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Correo Electr\u00f3nico"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fecha_constitucion",
+   "fieldtype": "Date",
+   "label": "Fecha de Constituci\u00f3n"
+  },
+  {
+   "fieldname": "junta_directiva",
+   "fieldtype": "Table",
+   "label": "Junta Directiva",
+   "options": "SM_Junta Directiva"
+  },
+  {
+   "fieldname": "pbi",
+   "fieldtype": "Small Text",
+   "ignore_user_permissions": 1,
+   "label": "PBI",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_escritura_constitucion",
+   "fieldtype": "Data",
+   "label": "No de Escritura de Constituci\u00f3n"
+  },
+  {
+   "fieldname": "fecha_inscripcion",
+   "fieldtype": "Date",
+   "label": "Fecha de Inscripci\u00f3n"
+  },
+  {
+   "fieldname": "tomo_folio_libro_noregistro",
+   "fieldtype": "Data",
+   "label": "Tomo, Folio y Numero de registro"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-09-11 23:07:12.925307",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Cooperativa de Mineria Artesanal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Contador Mineria",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Socio Mineria",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,35 @@
+{
+ "creation": "2019-12-24 04:59:37.441235",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre_hijo",
+  "fecha_nacimiento_hijo"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_hijo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Completo"
+  },
+  {
+   "fieldname": "fecha_nacimiento_hijo",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha Nacimiento"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-24 05:16:03.725510",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SM_Hijos de Mineros",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,20 @@
+
+
+<iframe width="100%" id="pbi" height="650" src="" frameborder="0" allowFullScreen="true"></iframe>
+ 
+<script>
+	frappe.call({
+		"method": "frappe.client.get_value",
+		args: {
+			doctype: "Cooperativa de Mineria Artesanal",
+			fieldname: "pbi",
+		},
+		callback: function (r) {
+			if (r.message.pbi) {
+				document.getElementById("pbi").src = r.message.pbi;
+			} else {
+				document.getElementById("pbi").src = "https://bit.ly/gestionminas"
+			}
+		}
+	});
+</script>

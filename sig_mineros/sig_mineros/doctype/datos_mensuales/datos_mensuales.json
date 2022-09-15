@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "autoname": "format:{mes}-{anio}",
+ "creation": "2020-01-02 16:48:51.799216",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mes",
+  "fecha_cierre",
+  "column_break_2",
+  "anio",
+  "socios_section",
+  "nuevos_socios",
+  "column_break_6",
+  "saldida_socios",
+  "column_break_8",
+  "socios_activos",
+  "section_break_10",
+  "con_contrato",
+  "column_break_12",
+  "sin_contrato",
+  "section_break_12",
+  "sin_seguro",
+  "select_14",
+  "con_seguro_inss",
+  "section_break_16",
+  "con_seguro_privado",
+  "section_break_20",
+  "tasa_retencion",
+  "nuevos_socios_anio"
+ ],
+ "fields": [
+  {
+   "fieldname": "socios_section",
+   "fieldtype": "Section Break",
+   "label": "SOCIOS"
+  },
+  {
+   "fieldname": "nuevos_socios",
+   "fieldtype": "Int",
+   "label": "Nuevos Socios del mes"
+  },
+  {
+   "fieldname": "saldida_socios",
+   "fieldtype": "Int",
+   "label": "Salida de Socios en el mes"
+  },
+  {
+   "fieldname": "socios_activos",
+   "fieldtype": "Int",
+   "label": "Socios Activos al Cierre"
+  },
+  {
+   "fieldname": "con_contrato",
+   "fieldtype": "Int",
+   "label": "No. Socios Con contrato"
+  },
+  {
+   "fieldname": "sin_contrato",
+   "fieldtype": "Int",
+   "label": "No. Socios Sin Contrato"
+  },
+  {
+   "fieldname": "con_seguro_inss",
+   "fieldtype": "Int",
+   "label": "No. Socios Con Seguro INSS"
+  },
+  {
+   "fieldname": "sin_seguro",
+   "fieldtype": "Int",
+   "label": "No. Socios Sin Seguro"
+  },
+  {
+   "fieldname": "con_seguro_privado",
+   "fieldtype": "Int",
+   "label": "No. Socios con Seguro Privado"
+  },
+  {
+   "fieldname": "mes",
+   "fieldtype": "Select",
+   "label": "Mes",
+   "options": "Enero\nFebrero\nMarzo\nAbril\nMayo\nJunio\nJulio\nAgosto\nSeptiembre\nOctubre\nNoviembre\nDiciembre",
+   "set_only_once": 1
+  },
+  {
+   "default": "2022",
+   "fieldname": "anio",
+   "fieldtype": "Select",
+   "label": "A\u00f1o",
+   "options": "2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "tasa_retencion",
+   "fieldtype": "Float",
+   "label": "Tasa Retenci\u00f3n",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nuevos_socios_anio",
+   "fieldtype": "Int",
+   "label": "Nuevos Socios en el A\u00f1o",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fecha_cierre",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Fecha",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2022-07-10 21:26:18.153530",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Datos Mensuales",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Socio Mineria",
+   "share": 1
+  }
+ ],
+ "sort_field": "fecha_cierre",
+ "sort_order": "DESC",
+ "states": []
+}

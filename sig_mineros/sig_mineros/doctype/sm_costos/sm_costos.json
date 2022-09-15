@@ -1,0 +1,45 @@
+{
+ "creation": "2020-01-03 22:07:11.061452",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_costo",
+  "aplica_ingreso",
+  "valor"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_costo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipo Costo",
+   "options": "Tipo de Costos"
+  },
+  {
+   "fieldname": "aplica_ingreso",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Aplicar a",
+   "options": "Tipo de Ingresos"
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto",
+   "precision": "2"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-03 22:14:19.802217",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "SM_Costos",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

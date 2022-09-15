@@ -1,0 +1,13 @@
+{
+ "creation": "2019-11-14 09:15:28.079420",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2019-11-14 09:15:28.079420",
+ "modified_by": "Administrator",
+ "module": "sig_mineros",
+ "name": "SIG Mineros",
+ "owner": "Administrator",
+ "source_name": "SIG Mineros",
+ "timeseries": 1
+}

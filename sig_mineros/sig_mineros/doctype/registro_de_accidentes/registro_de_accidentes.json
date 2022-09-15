@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "autoname": "format:ACCIDENTE-{#####}",
+ "creation": "2019-12-28 17:50:42.821672",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "minero_artesanal",
+  "fecha_hora_accidente",
+  "column_break_2",
+  "nombre_socio",
+  "ubicacion",
+  "tipo_accidente",
+  "section_break_7",
+  "personas_afectadas",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "description": "Socio responsable de las personas afectadas o del punto de extracci\u00f3n de material, de la carga, trasporte o descarga de cami\u00f3n.\n (En caso que el accidente sea asociado directamente de la cooperativa y no a un socio se deber\u00e1 crear la Cooperativa como Socio y seleccionarla aqu\u00ed).",
+   "fieldname": "minero_artesanal",
+   "fieldtype": "Link",
+   "label": "Minero Artesanal (Socio)",
+   "options": "Minero Artesanal",
+   "reqd": 1
+  },
+  {
+   "description": "Ingresar hora en formato 24 hrs",
+   "fieldname": "fecha_hora_accidente",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Fecha y hora del Accidente",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_accidente",
+   "fieldtype": "Select",
+   "label": "Tipo de Accidente",
+   "options": "Leve\nGrave\nMuy Grave\nMortal",
+   "reqd": 1
+  },
+  {
+   "description": "Direcci\u00f3n o lugar en donde se dio el accidente",
+   "fieldname": "ubicacion",
+   "fieldtype": "Data",
+   "label": "Ubicaci\u00f3n del Accidente"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text Editor",
+   "label": "Descripci\u00f3n del Accidente"
+  },
+  {
+   "fetch_from": "minero_artesanal.nombre",
+   "fieldname": "nombre_socio",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre del Socio",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "personas_afectadas",
+   "fieldtype": "Table",
+   "label": "Personas Afectadas",
+   "options": "SM_Personas Afectadas"
+  }
+ ],
+ "links": [],
+ "modified": "2022-08-06 10:51:42.932117",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Registro de Accidentes",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Socio Mineria",
+   "share": 1
+  }
+ ],
+ "search_fields": "minero_artesanal",
+ "sort_field": "fecha_hora_accidente",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

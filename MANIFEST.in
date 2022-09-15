@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sig_mineros *.css
+recursive-include sig_mineros *.csv
+recursive-include sig_mineros *.html
+recursive-include sig_mineros *.ico
+recursive-include sig_mineros *.js
+recursive-include sig_mineros *.json
+recursive-include sig_mineros *.md
+recursive-include sig_mineros *.png
+recursive-include sig_mineros *.py
+recursive-include sig_mineros *.svg
+recursive-include sig_mineros *.txt
+recursive-exclude sig_mineros *.pyc

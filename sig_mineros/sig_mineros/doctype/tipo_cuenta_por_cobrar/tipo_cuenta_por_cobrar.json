@@ -1,0 +1,61 @@
+{
+ "autoname": "field:tipo_cuenta_cobrar",
+ "creation": "2020-01-03 19:38:53.468763",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_cuenta_cobrar",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_cuenta_cobrar",
+   "fieldtype": "Data",
+   "label": "Tipo Cuenta por Cobrar",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text Editor",
+   "in_preview": 1,
+   "label": "Descripcion"
+  }
+ ],
+ "hide_toolbar": 1,
+ "modified": "2020-01-06 07:58:28.373987",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Tipo Cuenta por Cobrar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "tipo_cuenta_cobrar"
+}

@@ -1,0 +1,284 @@
+{
+ "actions": [],
+ "autoname": "format:{mes}-{anio}",
+ "creation": "2020-01-03 19:25:23.230753",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mes",
+  "fecha_cierre",
+  "column_break_3",
+  "anio",
+  "balance_general_section",
+  "activos",
+  "disponibilidades",
+  "activos_corrientes",
+  "cuentas_por_cobrar",
+  "activo_total",
+  "pasivos",
+  "pasivos_corrientes",
+  "cuentas_por_pagar",
+  "pasivo_total",
+  "patrimonio",
+  "patrimonio_total",
+  "h4estado_de_resultadosh4_section",
+  "ingresos",
+  "tipo_costos",
+  "gastos_section",
+  "gastos_personal",
+  "gastos_operacion",
+  "column_break_23",
+  "gastos_externos",
+  "gastos_transporte",
+  "column_break_26",
+  "gastos_jd",
+  "gastos_impuestos",
+  "gastos_otros",
+  "resultados_column",
+  "resultado"
+ ],
+ "fields": [
+  {
+   "fieldname": "mes",
+   "fieldtype": "Select",
+   "label": "Mes",
+   "options": "Enero\nFebrero\nMarzo\nAbril\nMayo\nJunio\nJulio\nAgosto\nSeptiembre\nOctubre\nNoviembre\nDiciembre",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "description": "\u00daltimo d\u00eda del mes",
+   "fieldname": "fecha_cierre",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2022",
+   "fieldname": "anio",
+   "fieldtype": "Select",
+   "label": "A\u00f1o",
+   "options": "2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:!(doc.__islocal);",
+   "fieldname": "balance_general_section",
+   "fieldtype": "Tab Break",
+   "label": "Balance General"
+  },
+  {
+   "description": "Saldo en Caja + Caja Chica + Bancos",
+   "fieldname": "disponibilidades",
+   "fieldtype": "Currency",
+   "label": "Disponibilidades",
+   "precision": "2"
+  },
+  {
+   "description": "Disponibilidades + Inventarios + Cuentas por cobrar (&lt;12 meses) + Cualquier otro activo realizable en 12 meses.",
+   "fieldname": "activos_corrientes",
+   "fieldtype": "Currency",
+   "label": "Activos Corrientes",
+   "precision": "2"
+  },
+  {
+   "fieldname": "activos",
+   "fieldtype": "Heading",
+   "label": "ACTIVOS"
+  },
+  {
+   "fieldname": "cuentas_por_cobrar",
+   "fieldtype": "Table",
+   "label": "Cuentas por Cobrar",
+   "options": "SM_Cuentas por Cobrar"
+  },
+  {
+   "fieldname": "activo_total",
+   "fieldtype": "Currency",
+   "label": "Activos Totales",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pasivos",
+   "fieldtype": "Heading",
+   "label": "PASIVOS"
+  },
+  {
+   "description": "Saldo con Proveedores (&lt;12 meses) + Pr\u00e9stamos Corto Plazo + Cualquier otra cuenta por cobrar &lt; a 12 meses",
+   "fieldname": "pasivos_corrientes",
+   "fieldtype": "Currency",
+   "label": "Pasivos Corrientes",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cuentas_por_pagar",
+   "fieldtype": "Table",
+   "label": "Cuentas por Pagar",
+   "options": "SM_Cuentas por Pagar"
+  },
+  {
+   "fieldname": "pasivo_total",
+   "fieldtype": "Currency",
+   "label": "Pasivos Totales",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patrimonio_total",
+   "fieldtype": "Currency",
+   "label": "Total Patrimonio",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:!(doc.__islocal);",
+   "fieldname": "h4estado_de_resultadosh4_section",
+   "fieldtype": "Tab Break",
+   "label": "Estado de Resultados"
+  },
+  {
+   "description": "Ingresos Acumulados desde el inicio del periodo",
+   "fieldname": "ingresos",
+   "fieldtype": "Table",
+   "label": "Ingresos",
+   "options": "SM_Ingresos"
+  },
+  {
+   "fieldname": "tipo_costos",
+   "fieldtype": "Table",
+   "label": "Costos",
+   "options": "SM_Costos"
+  },
+  {
+   "description": "Internet + Servicios B\u00e1sicos + Alquiler + Papeler\u00eda y \u00datiles de  Oficina +Gastos de Seguridad + Cafeter\u00eda y Refrigerios + Depreciaci\u00f3n de edificio y equipos de oficina + Mantenimiento de edificio y equipos de oficina, etc. ",
+   "fieldname": "gastos_operacion",
+   "fieldtype": "Currency",
+   "label": "Gastos de Operaci\u00f3n",
+   "precision": "2"
+  },
+  {
+   "description": "Salario + Prestaciones Sociales + INSS + INATEC + Subsidios de alimentaci\u00f3n / Transporte + Otros Beneficios del Personal",
+   "fieldname": "gastos_personal",
+   "fieldtype": "Currency",
+   "label": "Gastos de Personal",
+   "precision": "2"
+  },
+  {
+   "description": "Asesorias legales + Asesor\u00edas Contables + Auditor\u00edas + Asesor\u00edas por Sistemas Inform\u00e1ticos + Otros Gastos Externos",
+   "fieldname": "gastos_externos",
+   "fieldtype": "Currency",
+   "label": "Gastos por Servicios Externos",
+   "precision": "2"
+  },
+  {
+   "description": "Combustibles y lubricantes + Depreciaci\u00f3n de Veh\u00edculos + Mantenimiento de Veh\u00edculos ",
+   "fieldname": "gastos_transporte",
+   "fieldtype": "Currency",
+   "label": "Gastos por Transporte",
+   "precision": "2"
+  },
+  {
+   "description": "Gastos por Dietas, Gastos de alimentaci\u00f3n y refrigerios + Vi\u00e1ticos pagados a miembros de JD y Asamblea",
+   "fieldname": "gastos_jd",
+   "fieldtype": "Currency",
+   "label": "Gastos de JD y Asambleas",
+   "precision": "2"
+  },
+  {
+   "description": "Impuesto pagado a la DGI y Alcald\u00eda como: anticipo mensual, IR anual, retenciones asumidas, impuesto municipal, IBI, multas, etc.",
+   "fieldname": "gastos_impuestos",
+   "fieldtype": "Currency",
+   "label": "Impuestos",
+   "precision": "2"
+  },
+  {
+   "description": "Otros gastos que no caben en las casillas anteriores",
+   "fieldname": "gastos_otros",
+   "fieldtype": "Currency",
+   "label": "Otros Gastos",
+   "precision": "2"
+  },
+  {
+   "fieldname": "resultado",
+   "fieldtype": "Currency",
+   "label": "Resultado del Ejercicio",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patrimonio",
+   "fieldtype": "Heading",
+   "label": "PATRIMONIO"
+  },
+  {
+   "fieldname": "gastos_section",
+   "fieldtype": "Section Break",
+   "label": "Gastos"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resultados_column",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "modified": "2022-07-10 21:23:53.532492",
+ "modified_by": "Administrator",
+ "module": "SIG Mineros",
+ "name": "Datos Estados Financieros",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Contador Mineria",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Socio Mineria",
+   "share": 1
+  }
+ ],
+ "sort_field": "fecha_cierre",
+ "sort_order": "DESC",
+ "states": []
+}
