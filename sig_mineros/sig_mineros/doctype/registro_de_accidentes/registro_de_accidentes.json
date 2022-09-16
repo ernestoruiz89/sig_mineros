@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "format:ACCIDENTE-{#####}",
  "creation": "2019-12-28 17:50:42.821672",
  "doctype": "DocType",
@@ -21,6 +22,7 @@
    "description": "Socio responsable de las personas afectadas o del punto de extracci\u00f3n de material, de la carga, trasporte o descarga de cami\u00f3n.\n (En caso que el accidente sea asociado directamente de la cooperativa y no a un socio se deber\u00e1 crear la Cooperativa como Socio y seleccionarla aqu\u00ed).",
    "fieldname": "minero_artesanal",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Minero Artesanal (Socio)",
    "options": "Minero Artesanal",
    "reqd": 1
@@ -36,6 +38,7 @@
   {
    "fieldname": "tipo_accidente",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Tipo de Accidente",
    "options": "Leve\nGrave\nMuy Grave\nMortal",
    "reqd": 1
@@ -75,7 +78,7 @@
   }
  ],
  "links": [],
- "modified": "2022-08-06 10:51:42.932117",
+ "modified": "2022-09-15 22:21:18.517507",
  "modified_by": "Administrator",
  "module": "SIG Mineros",
  "name": "Registro de Accidentes",

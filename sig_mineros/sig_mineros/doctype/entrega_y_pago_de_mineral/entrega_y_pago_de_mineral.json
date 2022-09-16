@@ -24,6 +24,7 @@
   "tipo_mineral",
   "estado_del_mineral",
   "section_break_1",
+  "semana_pago_inicial",
   "fecha_pago",
   "toneladas_aceptadas",
   "ley",
@@ -32,6 +33,7 @@
   "precio_internacional_oro",
   "precio_internacional_plata",
   "column_break_20",
+  "semana_pago_final",
   "ingreso_oro",
   "ingreso_plata",
   "ingreso_total",
@@ -103,6 +105,7 @@
    "default": "Pendiente de Resultados",
    "fieldname": "estado_del_mineral",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Estado de Mineral",
    "options": "Pendiente de Resultados\nAceptado\nRechazado por HEMCO\nRemuestreo\nRemuestreo/Aceptado\nRemuestreo/Rechazado\nRemuestreo/No Retirado\nRechazado por Minero Artesanal"
   },
@@ -314,10 +317,20 @@
    "fieldtype": "Link",
    "label": "Mineral",
    "options": "Tipo de Mineral"
+  },
+  {
+   "fieldname": "semana_pago_inicial",
+   "fieldtype": "Date",
+   "label": "Semana de Pago Inicial"
+  },
+  {
+   "fieldname": "semana_pago_final",
+   "fieldtype": "Date",
+   "label": "Semana de Pago Final"
   }
  ],
  "links": [],
- "modified": "2022-08-07 20:06:53.261674",
+ "modified": "2022-09-15 22:11:17.003980",
  "modified_by": "Administrator",
  "module": "SIG Mineros",
  "name": "Entrega y Pago de Mineral",
