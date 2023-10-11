@@ -56,7 +56,7 @@ app_license = "MIT"
 
 # before_install = "sig_mineros.install.before_install"
 # after_install = "sig_mineros.install.after_install"
-after_install = "sig_mineros.setup.setup_sig_mineros"
+#after_install = "sig_mineros.setup.setup_sig_mineros"
 
 # Desk Notifications
 # ------------------
